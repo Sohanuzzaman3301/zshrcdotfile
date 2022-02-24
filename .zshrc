@@ -78,7 +78,7 @@ z4h source ohmyzsh/ohmyzsh/plugins/sudo/sudo.plugin.zsh # esc * 2 for sudo
 z4h source ohmyzsh/ohmyzsh/plugins/zsh_reload #zsh reload
 z4h source ohmyzsh/ohmyzsh/plugins/web-search.plugin.zsh
 z4h source ohmyzsh/ohmyzsh/plugins/history-substring-search/history-substring-search.plugin.zsh
-z4h source ohmyzsh/ohmyzsh/plugins/copydir/copydir.plugin.zsh
+z4h source ohmyzsh/ohmyzsh/plugins/copypath/copypath.plugin.zsh
 z4h source ohmyzsh/ohmyzsh/plugins/copybuffer/copybuffer.plugin.zsh
 z4h source MichaelAquilina/zsh-you-should-use/you-should-use.plugin.zsh
 # Define key bindings.

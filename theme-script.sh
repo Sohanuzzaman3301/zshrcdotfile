@@ -1,3 +1,4 @@
+#!/bin/bash
 cd ~
 git clone https://github.com/yeyushengfan258/ArcStarry-Cursors.git
 cd ~/ArcStarry-Cursors

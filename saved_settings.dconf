@@ -1,0 +1,254 @@
+[com/github/amezin/ddterm]
+background-color='rgb(0,0,0)'
+bold-color='rgb(115,196,143)'
+bold-color-same-as-fg=true
+bold-is-bright=false
+cursor-background-color='rgb(246,246,246)'
+cursor-colors-set=true
+cursor-foreground-color='rgb(73,185,199)'
+custom-font='MesloLGS NF 10'
+foreground-color='rgb(242,242,242)'
+highlight-background-color='rgb(72,185,199)'
+highlight-colors-set=true
+highlight-foreground-color='rgb(255,255,255)'
+palette=['rgb(51,51,51)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(136,128,124)', 'rgb(241,93,34)', 'rgb(115,196,143)', 'rgb(255,206,81)', 'rgb(72,185,199)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+panel-icon-type='none'
+tab-policy='automatic'
+use-system-font=false
+use-theme-colors=false
+window-maximize=false
+window-position='right'
+window-resizable=false
+window-size=0.58000000000000007
+
+[com/github/donadigo/eddy]
+mime-types=['application/vnd.debian.binary-package', 'application/x-deb']
+window-x=63
+window-y=111
+
+[io/elementary/appcenter/settings]
+cached-drivers=['nvidia-driver-470, (kernel modules provided by nvidia-dkms-470)', 'nvidia-driver-390, (kernel modules provided by nvidia-dkms-390)', 'nvidia-driver-418-server, (kernel modules provided by nvidia-dkms-418-server)', 'nvidia-driver-510-server, (kernel modules provided by nvidia-dkms-510-server)', 'nvidia-driver-450-server, (kernel modules provided by nvidia-dkms-450-server)', 'nvidia-driver-470-server, (kernel modules provided by nvidia-dkms-470-server)', 'nvidia-driver-510, (kernel modules provided by nvidia-dkms-510)', 'rtl8812au-dkms, (kernel modules provided by rtl8812au-dkms)']
+last-refresh-time=int64 1652374312
+window-maximized=false
+window-position=(26, 23)
+window-size=(910, 640)
+
+[org/gnome/control-center]
+last-panel='keyboard'
+
+[org/gnome/desktop/app-folders/folders/Pop-Office]
+apps=['libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'libreoffice-math.desktop', 'libreoffice-startcenter.desktop', 'libreoffice-writer.desktop']
+name='Office'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Pop-System]
+apps=['gnome-language-selector.desktop', 'gnome-session-properties.desktop', 'gnome-system-monitor.desktop', 'im-config.desktop', 'nm-connection-editor.desktop', 'nvidia-settings.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.PowerStats.desktop', 'org.gnome.seahorse.Application.desktop', 'software-properties-gnome.desktop', 'system76-driver.desktop', 'system76-firmware.desktop']
+name='System'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Pop-Utility]
+apps=['com.github.donadigo.eddy.desktop', 'com.system76.Popsicle.desktop', 'gucharmap.desktop', 'info.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.Totem.desktop', 'pop-cosmic-applications.desktop', 'pop-cosmic-launcher.desktop', 'pop-cosmic-workspaces.desktop', 'simple-scan.desktop', 'yelp.desktop']
+name='Utilities'
+translate=true
+
+[org/gnome/desktop/background]
+picture-uri='file:///usr/share/backgrounds/pop/kate-hazen-COSMIC-desktop-wallpaper.png'
+
+[org/gnome/desktop/input-sources]
+current=uint32 0
+per-window=false
+sources=[('xkb', 'us')]
+xkb-options=@as []
+
+[org/gnome/desktop/interface]
+color-scheme='prefer-dark'
+cursor-theme='ArcStarry-cursors'
+document-font-name='Cantarell 11'
+font-antialiasing='grayscale'
+font-hinting='slight'
+font-name='Cantarell 10'
+gtk-theme='WhiteSur-Dark-purple'
+icon-theme='Tela-dark'
+locate-pointer=false
+monospace-font-name='Fira Code weight=453 11'
+
+[org/gnome/desktop/notifications]
+application-children=['firefox', 'org-gnome-nautilus', 'org-gnome-shell-extensions', 'com-github-donadigo-eddy', 'gnome-control-center', 'org-gnome-tweaks', 'appimagekit-ab64286dd532f03dac7b0db37f3aedd5-appimage-pool', 'org-gnome-gedit', 'io-elementary-appcenter', 'anaconda-navigator']
+
+[org/gnome/desktop/notifications/application/anaconda-navigator]
+application-id='anaconda-navigator.desktop'
+
+[org/gnome/desktop/notifications/application/appimagekit-ab64286dd532f03dac7b0db37f3aedd5-appimage-pool]
+application-id='appimagekit_ab64286dd532f03dac7b0db37f3aedd5-AppImage_Pool.desktop'
+
+[org/gnome/desktop/notifications/application/com-github-donadigo-eddy]
+application-id='com.github.donadigo.eddy.desktop'
+
+[org/gnome/desktop/notifications/application/firefox]
+application-id='firefox.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-control-center]
+application-id='gnome-control-center.desktop'
+
+[org/gnome/desktop/notifications/application/io-elementary-appcenter]
+application-id='io.elementary.appcenter.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-gedit]
+application-id='org.gnome.gedit.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-shell-extensions]
+application-id='org.gnome.Shell.Extensions.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-tweaks]
+application-id='org.gnome.tweaks.desktop'
+
+[org/gnome/desktop/peripherals/keyboard]
+numlock-state=true
+
+[org/gnome/desktop/privacy]
+report-technical-problems=false
+
+[org/gnome/desktop/wm/keybindings]
+minimize=['<Super>comma']
+show-desktop=['<Super>d']
+switch-to-workspace-down=['<Primary><Super>Down', '<Primary><Super>KP_Down', '<Primary><Super>j', '<Primary><Shift>Page_Down']
+switch-to-workspace-up=['<Primary><Super>Up', '<Primary><Super>KP_Up', '<Primary><Super>k', '<Primary><Shift>Page_Up']
+
+[org/gnome/desktop/wm/preferences]
+button-layout='appmenu:minimize,maximize,close'
+focus-mode='sloppy'
+titlebar-font='Cantarell 10'
+
+[org/gnome/evolution-data-server]
+migrated=true
+network-monitor-gio-name=''
+
+[org/gnome/gedit/plugins]
+active-plugins=['spell', 'sort', 'openlinks', 'modelines', 'filebrowser', 'docinfo']
+
+[org/gnome/gedit/plugins/filebrowser]
+root='file:///'
+tree-view=true
+virtual-root='file:///home/someone'
+
+[org/gnome/gedit/preferences/ui]
+show-tabs-mode='auto'
+
+[org/gnome/gedit/state/window]
+bottom-panel-size=140
+side-panel-active-page='GeditWindowDocumentsPanel'
+side-panel-size=200
+size=(668, 325)
+state=43908
+
+[org/gnome/mutter]
+experimental-features=@as []
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+search-filter-time-type='last_modified'
+
+[org/gnome/nautilus/window-state]
+initial-size=(668, 752)
+maximized=false
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/PopLaunch1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+terminal=@as []
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/PopLaunch1]
+binding='Launch1'
+command='gnome-control-center wifi'
+name='WiFi'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>t'
+command='kitty'
+name='kitty'
+
+[org/gnome/shell]
+disabled-extensions=['cosmic-dock@system76.com', 'extension-list@tu.berry', 'cosmic-workspaces@system76.com', 'pop-cosmic@system76.com']
+enabled-extensions=['pop-shell@system76.com', 'system76-power@system76.com', 'ubuntu-appindicators@ubuntu.com', 'CoverflowAltTab@palatis.blogspot.com', 'ddterm@amezin.github.com', 'dash-to-dock-cosmic-@halfmexicanhalfamazing@gmail.com', 'ding@rastersoft.com', 'blur-my-shell@aunetx', 'gnome-ui-tune@itstime.tech', 'hidetopbar@mathieu.bidon.ca', 'user-theme@gnome-shell-extensions.gcampax.github.com']
+favorite-apps=['pop-cosmic-launcher.desktop', 'pop-cosmic-workspaces.desktop', 'pop-cosmic-applications.desktop', 'firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop', 'io.elementary.appcenter.desktop', 'start-librewolf.desktop', 'gnome-control-center.desktop']
+welcome-dialog-last-shown-version='42.0'
+
+[org/gnome/shell/extensions/blur-my-shell]
+dash-to-dock-blur=false
+
+[org/gnome/shell/extensions/coverflowalttab]
+current-workspace-only='all-currentfirst'
+
+[org/gnome/shell/extensions/dash-to-dock]
+background-color='rgb(0,0,0)'
+background-opacity=0.80000000000000004
+custom-background-color=true
+custom-theme-shrink=true
+dash-max-icon-size=32
+dock-position='BOTTOM'
+extend-height=false
+height-fraction=0.90000000000000002
+manualhide=true
+preferred-monitor=-2
+preferred-monitor-by-connector='HDMI-0'
+transparency-mode='DYNAMIC'
+
+[org/gnome/shell/extensions/hidetopbar]
+enable-active-window=false
+
+[org/gnome/shell/extensions/pop-cosmic]
+overlay-key-action='APPLICATIONS'
+
+[org/gnome/shell/extensions/pop-shell]
+show-title=true
+smart-gaps=true
+snap-to-grid=true
+tile-by-default=true
+
+[org/gnome/shell/keybindings]
+toggle-overview=@as []
+
+[org/gnome/system/location]
+enabled=false
+
+[org/gnome/terminal/legacy/profiles:]
+list=['2d87cf7d-816d-4ab5-9b19-45c011c2a909']
+
+[org/gnome/terminal/legacy/profiles:/:2d87cf7d-816d-4ab5-9b19-45c011c2a909]
+allow-bold=true
+background-color='#101010101010'
+bold-color='#f2f2f2f2f2f2'
+bold-color-same-as-fg=true
+cursor-background-color='#f2f2f2f2f2f2'
+cursor-colors-set=true
+cursor-foreground-color='#101010101010'
+foreground-color='#f2f2f2f2f2f2'
+palette=['#303030303030', '#e1e132321a1a', '#6a6ab0b01717', '#ffffc0c00505', '#00004f4f9e9e', '#ecec00004848', '#2a2aa7a7e7e7', '#f2f2f2f2f2f2', '#5d5d5d5d5d5d', '#ffff36361e1e', '#7b7bc9c91f1f', '#ffffd0d00a0a', '#00007171ffff', '#ffff1d1d6262', '#4b4bb8b8fdfd', '#a0a02020f0f0']
+use-theme-background=false
+use-theme-colors=false
+use-theme-transparency=false
+visible-name='Elementary'
+
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+use-system-font=true
+use-theme-transparency=false
+
+[org/gtk/gtk4/settings/color-chooser]
+custom-colors=[(0.20000000298023224, 0.20000000298023224, 0.20000000298023224, 1.0)]
+selected-color=(true, 0.0, 0.0, 0.0, 1.0)
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=150
+sort-column='name'
+sort-directories-first=true
+sort-order='ascending'
+type-format='category'
+window-position=(238, 0)
+window-size=(1096, 721)

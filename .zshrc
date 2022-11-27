@@ -10,14 +10,11 @@ zstyle ':z4h:' auto-update      'no'
 # Ask whether to auto-update this often; has no effect if auto-update is 'no'.
 zstyle ':z4h:' auto-update-days '28'
 
-# Don't start tmux.
-zstyle ':z4h:' start-tmux       no
-
-# Move prompt to the bottom when zsh starts and on Ctrl+L.
-zstyle ':z4h:' prompt-at-bottom 'yes'
-
 # Keyboard type: 'mac' or 'pc'.
 zstyle ':z4h:bindkey' keyboard  'pc'
+
+# Don't start tmux.
+zstyle ':z4h:' start-tmux       no
 
 # Mark up shell's output with semantic information.
 zstyle ':z4h:' term-shell-integration 'yes'
@@ -51,7 +48,6 @@ zstyle ':z4h:ssh:*' send-extra-files '~/.nanorc' '~/.env.zsh'
 # up-to-date. Cloned files can be used after `z4h init`. This is just an
 # example. If you don't plan to use Oh My Zsh, delete this line.
 z4h install ohmyzsh/ohmyzsh || return
-z4h install  MichaelAquilina/zsh-you-should-use || return
 
 # Install or update core components (fzf, zsh-autosuggestions, etc.) and
 # initialize Zsh. After this point console I/O is unavailable until Zsh
@@ -60,8 +56,9 @@ z4h install  MichaelAquilina/zsh-you-should-use || return
 z4h init || return
 
 # Extend PATH.
-path=(~/bin $path)
-
+export ANDROID_HOME=$HOME/devel/Android/Sdk
+path=(~/bin ~/devel/flutter/bin $path)
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Export environment variables.
 export GPG_TTY=$TTY
 
@@ -71,22 +68,15 @@ z4h source ~/.env.zsh
 # Use additional Git repositories pulled in with `z4h install`.
 #
 # This is just an example that you should delete. It does nothing useful.
-z4h source ohmyzsh/ohmyzsh/lib/clipboard.zsh
 z4h source ohmyzsh/ohmyzsh/lib/diagnostics.zsh  # source an individual file
 z4h load   ohmyzsh/ohmyzsh/plugins/emoji-clock  # load a plugin
-z4h source ohmyzsh/ohmyzsh/plugins/sudo/sudo.plugin.zsh # esc * 2 for sudo
-z4h source ohmyzsh/ohmyzsh/plugins/zsh_reload #zsh reload
-z4h source ohmyzsh/ohmyzsh/plugins/web-search.plugin.zsh
-z4h source ohmyzsh/ohmyzsh/plugins/history-substring-search/history-substring-search.plugin.zsh
-z4h source ohmyzsh/ohmyzsh/plugins/copypath/copypath.plugin.zsh
-z4h source ohmyzsh/ohmyzsh/plugins/copybuffer/copybuffer.plugin.zsh
-z4h source MichaelAquilina/zsh-you-should-use/you-should-use.plugin.zsh
+z4h load   ohmyzsh/ohmyzsh/plugins/sudo
 # Define key bindings.
 z4h bindkey z4h-backward-kill-word  Ctrl+Backspace     Ctrl+H
 z4h bindkey z4h-backward-kill-zword Ctrl+Alt+Backspace
 
-z4h bindkey undo Ctrl+/ Shift+Tab # undo the last command line change
-z4h bindkey redo Alt+/            # redo the last undone command line change
+z4h bindkey undo Ctrl+/ Shift+Tab  # undo the last command line change
+z4h bindkey redo Alt+/             # redo the last undone command line change
 
 z4h bindkey z4h-cd-back    Alt+Left   # cd into the previous directory
 z4h bindkey z4h-cd-forward Alt+Right  # cd into the next directory
@@ -107,6 +97,9 @@ compdef _directories md
 alias tree='tree -a -I .git'
 
 # Add flags to existing aliases.
+alias ls="${aliases[ls]:-ls} -A"
+
+# Add flags to existing aliases.
 alias ls='lsd'
 alias l='ls -l'
 alias la='ls -a'
@@ -124,6 +117,8 @@ alias clr='clear'
 # Set shell options: http://zsh.sourceforge.net/Doc/Release/Options.html.
 setopt glob_dots     # no special treatment for file names with a leading dot
 setopt no_auto_menu  # require an extra TAB press to open the completion menu
+
+
 
 ### Function extract for common file formats ###
 SAVEIFS=$IFS
@@ -171,4 +166,3 @@ IFS=$SAVEIFS
 alias cp="cp -i"
 alias mv='mv -i'
 alias rm='rm -i'
-

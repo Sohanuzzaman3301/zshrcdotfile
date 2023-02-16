@@ -6,7 +6,7 @@
 
 # Periodic auto-update on Zsh startup: 'ask' or 'no'.
 # You can manually run `z4h update` to update everything.
-zstyle ':z4h:' auto-update      'no'
+zstyle ':z4h:' auto-update      'yes'
 # Ask whether to auto-update this often; has no effect if auto-update is 'no'.
 zstyle ':z4h:' auto-update-days '28'
 
@@ -57,7 +57,8 @@ z4h init || return
 
 # Extend PATH.
 export ANDROID_HOME=$HOME/devel/Android/Sdk
-path=(~/bin ~/devel/flutter/bin $path)
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+path=(~/bin ~/devel/flutter/bin ~/.cargo/env $path)
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Export environment variables.
 export GPG_TTY=$TTY
@@ -68,7 +69,9 @@ z4h source ~/.env.zsh
 # Use additional Git repositories pulled in with `z4h install`.
 #
 # This is just an example that you should delete. It does nothing useful.
-z4h source ohmyzsh/ohmyzsh/lib/diagnostics.zsh  # source an individual file
+z4h load   zsh-syntax-highlighting
+z4h load   zsh-autosuggestions
+#z4h source ohmyzsh/ohmyzsh/lib/diagnostics.zsh  # source an individual file
 z4h load   ohmyzsh/ohmyzsh/plugins/emoji-clock  # load a plugin
 z4h load   ohmyzsh/ohmyzsh/plugins/sudo
 # Define key bindings.
@@ -105,15 +108,19 @@ alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
-alias dnfin='sudo dnf install'
-alias dnfrm='sudo dnf remove'
-alias dnfc='sudo dnf check-update'
-alias dnfup='sudo dnf upgrade'
+alias aptin='sudo nala install'
+alias aptrm='sudo nala remove'
+alias aptup='sudo nala update'
+alias aptf='sudo nala upgrade -y'
 alias du='ncdu'
 alias df='duf'
-alias clr='clear'
+#alias clr='clear'
+#alias open='xdg-open'
 
-
+#alias archup='sudo pacman -Syy'
+#alias archin='sudo pacman -S'
+#alias archf='sudo pacman -Syyu'
+#alias archrm='sudo pacman -Rs'
 # Set shell options: http://zsh.sourceforge.net/Doc/Release/Options.html.
 setopt glob_dots     # no special treatment for file names with a leading dot
 setopt no_auto_menu  # require an extra TAB press to open the completion menu
@@ -134,7 +141,7 @@ function extract {
     do
       if [ -f "$n" ] ; then
           case "${n%,}" in
-            *.cbt|*.tar.bz2|*.tar.gz|*.tar.xz|*.tbz2|*.tgz|*.txz|*.tar)
+            *.cbt|*.tar.zst|*.tar.bz2|*.tar.gz|*.tar.xz|*.tbz2|*.tgz|*.txz|*.tar)
                          tar xvf "$n"       ;;
             *.lzma)	 unlzma ./"$n"      ;;
             *.bz2)	 bunzip2 ./"$n"     ;;
@@ -166,3 +173,4 @@ IFS=$SAVEIFS
 alias cp="cp -i"
 alias mv='mv -i'
 alias rm='rm -i'
+

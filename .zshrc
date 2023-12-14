@@ -56,9 +56,11 @@ z4h install ohmyzsh/ohmyzsh || return
 z4h init || return
 
 # Extend PATH.
-export ANDROID_HOME=$HOME/devel/Android/Sdk
+export ANDROID_HOME=$HOME/Android/Sdk
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
-path=(~/bin ~/devel/flutter/bin ~/.cargo/env $path)
+path=(~/.pub-cache/bin ~/bin ~/devel/flutter/bin ~/.cargo/env $path)
+#path=(~/bin ~/devel/flutter/bin ~/.cargo/env $path)
+
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Export environment variables.
 export GPG_TTY=$TTY
@@ -173,4 +175,4 @@ IFS=$SAVEIFS
 alias cp="cp -i"
 alias mv='mv -i'
 alias rm='rm -i'
-
+alias ytd='yt-dlp_linux -f399+bestaudio' 
